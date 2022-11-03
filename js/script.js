@@ -24,33 +24,10 @@ function levelSelector(levelIndex) {
 
         if (levelIndex == 100) {
 
-            let n
-
-            do {
-                randomNumber = getRandomInteger(1, 100)
-
-                n++
-
-
-            } while (n <= 16)
-
-            arrRandoms.push(randomNumber)
-
-            
-
-           
-            
-
-
-
             eleCell.style.width = "calc(100% / 10)"
             eleCell.style.height = "calc(100% / 10)"
 
         } else if (levelIndex == 81) {
-
-            
-
-            arrRandoms.push(i)
 
 
             eleCell.style.width = "calc(100% / 9)"
@@ -58,9 +35,7 @@ function levelSelector(levelIndex) {
 
         } else {
 
-            arrRandoms.push(i)
-
-
+           
             eleCell.style.width = "calc(100% / 7)"
             eleCell.style.height = "calc(100% / 7)"
         }
