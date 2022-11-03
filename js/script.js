@@ -19,13 +19,11 @@ function levelSelector(levelIndex) {
 
         } else if (levelIndex == 81) {
 
-
             eleCell.style.width = "calc(100% / 9)"
             eleCell.style.height = "calc(100% / 9)"
 
         } else {
 
-           
             eleCell.style.width = "calc(100% / 7)"
             eleCell.style.height = "calc(100% / 7)"
         }
