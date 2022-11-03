@@ -4,10 +4,6 @@ const eleLevel = document.getElementById ('level')
 const arrRandoms = []
 
 
-
-
-
-
 function levelSelector(levelIndex) {
 
     
