@@ -44,7 +44,7 @@ function levelSelector(levelIndex) {
                 
                 const eleAll = document.querySelectorAll('.cell')
 
-                for (let i = 0; i > eleAll.length; i++) {
+                for (let i = 0; i < eleAll.length; i++) {
                     
                     eleAll[i].classList.add('active2')
                 }
