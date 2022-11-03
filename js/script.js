@@ -3,6 +3,20 @@ const eleButton = document.querySelector('button')
 const eleLevel = document.getElementById ('level')
 const arrRandoms = []
 
+for (i = 0; i < 16; i++) {
+
+    let randomNumber
+
+    do {randomNumber = getRandomInteger(1,100)
+    } while (arrRandoms.includes(randomNumber))
+
+    arrRandoms.push(randomNumber)
+}
+
+console.log(arrRandoms)
+
+
+
 function levelSelector(levelIndex) {
 
     for (let i = 1; i <= levelIndex; i++) {
