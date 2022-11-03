@@ -42,6 +42,7 @@ function levelSelector(levelIndex) {
 
             eleCell.style.width = "calc(100% / 9)"
             eleCell.style.height = "calc(100% / 9)"
+            
         } else {
 
             arrRandoms.push(i)
