@@ -3,10 +3,7 @@ const eleButton = document.querySelector('button')
 const eleLevel = document.getElementById ('level')
 const arrRandoms = []
 
-
 function levelSelector(levelIndex) {
-
-    
 
     for (let i = 1; i <= levelIndex; i++) {
 
@@ -14,9 +11,6 @@ function levelSelector(levelIndex) {
         eleCell.innerHTML = i
         eleCell.classList.add('cell')
         eleGrid.append(eleCell);
-
-        
-        
 
         if (levelIndex == 100) {
 
@@ -45,7 +39,6 @@ function levelSelector(levelIndex) {
 
 levelSelector (100);
 
-
 eleButton.addEventListener('click', function() {
 
     eleGrid.replaceChildren()
@@ -64,11 +57,6 @@ levelSelector(levelIndex);
 
 })
 
-
-
 function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min
 };
-
-
-
