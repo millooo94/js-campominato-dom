@@ -3,11 +3,12 @@ const eleButton = document.querySelector('button')
 const eleLevel = document.getElementById ('level')
 const arrRandoms = []
 
+let randomNumber
+
+
 for (i = 0; i < 16; i++) {
 
-    let randomNumber
-
-    do {randomNumber = getRandomInteger(1,100)
+    do {randomNumber = getRandomInteger(1, 100)
     } while (arrRandoms.includes(randomNumber))
 
     arrRandoms.push(randomNumber)
@@ -34,8 +35,14 @@ function levelSelector(levelIndex) {
             eleCell.style.width = "calc(100% / 7)"
             eleCell.style.height = "calc(100% / 7)"
         }
+        
         eleCell.addEventListener('click', function(){
-            this.classList.toggle('active')
+
+            if (arrRandoms.includes(i) == true) {
+                this.classList.toggle('active2')
+            } else {
+                this.classList.toggle('active1')
+            }
         })
     }
 }

@@ -82,7 +82,11 @@ footer {
     padding: 1rem;
 }
 
-.active {
+.active1 {
     background-color:cornflowerblue;
 }
 
+
+.active2 {
+    background-color: brown;
+}
