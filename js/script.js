@@ -26,7 +26,7 @@ function levelSelector(levelIndex) {
         eleCell.innerHTML = i
         eleCell.classList.add('cell')
         eleGrid.append(eleCell);
-        const eleAll = document.querySelectorAll('.cell')
+
         if (levelIndex == 100) {
             eleCell.style.width = "calc(100% / 10)"
             eleCell.style.height = "calc(100% / 10)"
@@ -42,8 +42,13 @@ function levelSelector(levelIndex) {
 
             if (arrRandoms.includes(i) == true) {
                 
-                this.classList.add('active2')
-                this.forEach(eleCell => {eleCell.classList.add('active2')})
+                const eleAll = document.querySelectorAll('.cell')
+
+                for (let i = 0; i > eleAll.length; i++) {
+                    
+                    eleAll[i].classList.add('active2')
+                }
+
             } else {
                 this.classList.toggle('active1')
             }
