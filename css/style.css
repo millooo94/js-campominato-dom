@@ -14,15 +14,11 @@ body {
 }
 
 header {
+    height: 5rem;
 
 }
 
-.container-fluid {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
 
-}
 
 .block-left {
     display: flex;
@@ -58,6 +54,7 @@ img {
 
 
 main {
+    height: calc(100% - 9rem);
     background-color: #7fffd4;
 }
 
@@ -79,6 +76,9 @@ main {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    height: 4rem;
     padding: 1rem;
 }
 
@@ -87,6 +87,41 @@ footer {
 }
 
 
-.active2 {
+.mine {
     background-color: brown;
+}
+
+.no-mine {
+    background-color:aqua;
+}
+
+.hidden {
+    display: none;
+}
+
+.row > div {
+    padding-left: 0 !important;
+}
+
+.result {
+    margin: auto;
+    width: 40% !important;
+    margin-top: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: .7rem;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

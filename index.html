@@ -14,34 +14,40 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row justify-content-between">
+        <div class="container-fluid h-100">
+            <div class="row justify-content-between h-100 p0">
                 <div class="col block-left">
                     <img src="img/WhatsApp Image 2022-11-02 at 14.50.52 (1).jpeg" alt="">
                     <h1>Campo Minato</h1>
                 </div>
                 <div class="col block-right justify-content-end">
                     <label for="level">Difficoltà:</label>
-                    <select name="" id="level">
-                        <option value="1">Easy</option>
-                        <option value="2">Intermediate</option>
-                        <option value="3">Hard</option>
+                    <select name="" id="select-level">
+                        <option value="100">Easy</option>
+                        <option value="81">Intermediate</option>
+                        <option value="49">Hard</option>
                     </select>
-                    <button>Play</button>
+                    <button id="btn-play">Play</button>
+                    <button id="btn-help" data-function="show-help">Help</button>
                 </div>
             </div>
         </div>
     </header>
-    <main class="p-5">
-        <div class="row">
-            <div class="col">
-                <div class="grid"></div> 
+    <main>
+        <div class="container">
+            <div class="start-screen">
+                <h2>Benvenuto in campo minato</h2>
             </div>
+            <div>
+                <div class="grid hidden"></div>
+                <div class="result hidden"></div> 
+            </div>
+           
         </div>
+        
     </main>
     <footer>
         <div>Made with &hearts; by <a href="">Boolean</a></div>
-
     </footer>
 </body>
 </html>
